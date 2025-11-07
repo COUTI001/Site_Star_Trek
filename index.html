@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<!-- Declaração do tipo de documento HTML5 -->
+<html lang="pt-BR">
+<head>
+  <!-- Configurações de metadados da página -->
+  <meta charset="UTF-8">
+  <!-- Viewport para responsividade em dispositivos móveis -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Ícone da aba do navegador (favicon) -->
+  <link rel="icon" type="image/x-icon" href="/img/NCC_1701_01.ico">
+
+  <!-- Título da página que aparece na aba do navegador -->
+  <title>Ships Star_Trek</title>
+
+  <!-- Link para o arquivo CSS com todos os estilos da página -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Font Awesome - biblioteca de ícones para usar no footer (GitHub, YouTube, LinkedIn) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+</head>
+<body>
+<!-- ============================================ -->
+<!-- SEÇÃO HEADER - Cabeçalho principal do site -->
+<!-- ============================================ -->
+  <div class="header">
+    <h2>UMA VIAGEM PELO MUNDO STAR TREK</h2>
+    <p>Desça para ver os diferentes tipos de naves da série Star Trek (sticky navbar).</p>
+  </div>
+
+  <!-- ============================================ -->
+  <!-- NAVBAR - Barra de navegação fixa -->
+  <!-- ============================================ -->
+  <div id="navbar">
+    <a class="active" href="#">Home</a> <!-- Link para o topo da página -->
+    <a href="#">Naves</a> <!-- Link para as seções de naves -->
+    <a href="#contato">Contato</a> <!-- Link que rola até o footer -->
+  </div>
+
+  <!-- ============================================ -->
+  <!-- CONTEÚDO PRINCIPAL - Área de conteúdo do site -->
+  <!-- ============================================ -->
+  <div class="content">
+    <h3>Uma Viagem pelo Mundo Star Trek</h3>
+    <p>Conheça um pouco das Naves que compoem esse fascinante mundo.</p>
+   
+
+    <!-- ============================================ -->
+    <!-- SEÇÃO 1 - USS NCC-1701 Enterprise -->
+    <!-- ============================================ -->
+    <div class="section">
+      <h4>Seção 1 - USS NCC-1701- Enterprise</h4>
+      
+      <!-- Imagem clicável que abre o modal ao ser clicada -->
+      <!-- A classe "nave-img" torna a imagem clicável e adiciona efeito hover -->
+      <!-- onclick="openModal('modal1')" chama a função JavaScript para abrir o modal -->
+      <img src="img/Star_Trek_01.jpg" alt="USS Enterprise NCC-1701" class="nave-img" onclick="openModal('modal1')">
+    </div>
+
+    <!-- Modal 1 - Caixa popup que aparece ao clicar na imagem da Enterprise -->
+    <!-- O modal é inicialmente oculto (display: none) e aparece quando a função openModal é chamada -->
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <!-- Botão X para fechar o modal -->
+        <span class="close" onclick="closeModal('modal1')">&times;</span>
+        <h4>Seção 1 - USS NCC-1701- Enterprise</h4>
+        <!-- Imagem maior dentro do modal -->
+        <img src="img/Star_Trek_01.jpg" alt="USS Enterprise NCC-1701" class="modal-img">
+        <!-- Área de texto com informações sobre a nave -->
+        <div class="modal-text">
+          <p>A USS Enterprise NCC-1701 é uma das naves espaciais mais icônicas da ficção 
+            científica — símbolo máximo da Franquia Star Trek e da própria ideia de exploração 
+            pacífica do universo.</p>
+          <p>A Enterprise NCC-1701 é uma nave de exploração científica e diplomática, não de guerra.
+            Ela serve como símbolo da Federação Unida dos Planetas, representando paz, descoberta e 
+            cooperação interplanetária.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- SEÇÃO 2 - USS Voyager -->
+    <!-- ============================================ -->
+    <div class="section">
+      <h5>Seção 2 - USS Voyager</h5>
+     
+      <!-- Imagem clicável da USS Voyager -->
+      <img src="img/Star_Trek_02.jpg" alt="USS Voyager" class="nave-img" onclick="openModal('modal2')">
+    </div>
+
+    <!-- Modal 2 - Popup com informações da USS Voyager -->
+    <div id="modal2" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal2')">&times;</span>
+        <h5>Seção 2 - USS Voyager</h5>
+        <img src="img/Star_Trek_02.jpg" alt="USS Voyager" class="modal-img">
+        <div class="modal-text">
+          <p>A Voyager é uma nave de exploração científica da Frota Estelar da Federação Unida dos 
+            Planetas. Embora menor que naves como a USS Enterprise-D, ela foi projetada para 
+            velocidade, eficiência e versatilidade, ideal para missões de longa duração e exploração 
+            de regiões desconhecidas do espaço.</p>
+          <p>A Voyager é equipada com motores de dobra (warp drive) capazes de atingir Dobra 9,975, 
+            um dos níveis mais altos de velocidade entre as naves da Frota Estelar.
+            Possui também impulsores de íons e um avançado sistema de defletores para navegação em 
+            alta velocidade e proteção contra detritos espaciais.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- SEÇÃO 3 - USS Agoney -->
+    <!-- ============================================ -->
+    <div class="section">
+      <h6>Seção 3 - USS Agoney</h6>
+     
+      <!-- Imagem clicável da USS Agoney -->
+      <img src="img/Star_Trek_03.jpg" alt="USS Agoney" class="nave-img" onclick="openModal('modal3')">
+    </div>
+
+    <!-- Modal 3 - Popup com informações da USS Agoney -->
+    <div id="modal3" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal3')">&times;</span>
+        <h6>Seção 3 - USS Agoney</h6>
+        <img src="img/Star_Trek_03.jpg" alt="USS Agoney" class="modal-img">
+        <div class="modal-text">
+          <p>Nave produzida por um fan sem informações básicas sobre, mais muito realista..</p>
+        </div>
+      </div>
+    </div>
+  
+
+  <!-- ============================================ -->
+  <!-- SEÇÃO 4 - USS Enterprise Constitution -->
+  <!-- ============================================ -->
+  <div class="section">
+    <h7>Seção  - USS Enterprise Constitution</h7>
+   
+    <!-- Imagem clicável da USS Enterprise Constitution -->
+    <img src="img/Star_Trek_04.jpg" alt="USS Enterprise Constitution" class="nave-img" onclick="openModal('modal4')">
+  </div>
+
+  <!-- Modal 4 - Popup com informações da USS Enterprise Constitution -->
+  <div id="modal4" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal4')">&times;</span>
+      <h7>Seção  - USS Enterprise Constitution</h7>
+      <img src="img/Star_Trek_04.jpg" alt="USS Enterprise Constitution" class="modal-img">
+      <div class="modal-text">
+        <p>Versão mais moderna da 1º Enterprise, produzida pela Paramount.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================ -->
+  <!-- SEÇÃO 5 - Deep Space Nine -->
+  <!-- ============================================ -->
+  <div class="section">
+    <h8>Seção  Star Trek Deep Space Nine</h8>
+   
+    <!-- Imagem clicável da estação Deep Space Nine -->
+    <img src="img/Star_Trek_05.jpg" alt="Deep Space Nine" class="nave-img" onclick="openModal('modal5')">
+  </div>
+
+  <!-- Modal 5 - Popup com informações da Deep Space Nine -->
+  <div id="modal5" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal5')">&times;</span>
+      <h8>Seção  Star Trek Deep Space Nine</h8>
+      <img src="img/Star_Trek_05.jpg" alt="Deep Space Nine" class="modal-img">
+      <div class="modal-text">
+        <p>🪐 📍 Nome completo e classificação
+          Nome: Deep Space Nine (abreviada como DS9)      
+          Designação oficial: Terok Nor (nome dado pelos cardassianos antes da ocupação bajoriana)      
+          Tipo: Estação espacial de operações orbitais e defesa      
+          Localização: Órbita do planeta Bajor, próxima ao buraco de minhoca Bajoriano (Wormhole de Bajor) — 
+          a única passagem estável conhecida entre o Quadrante Alfa e o Quadrante Gama.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================ -->
+  <!-- SEÇÃO 6 - USS Stargazer -->
+  <!-- ============================================ -->
+  <div class="section">
+    <h9>Seção  USS Stargazer</h9>
+    
+    <!-- Imagem clicável da USS Stargazer -->
+    <img src="img/Star_Trek_06.jpg" alt="USS Stargazer" class="nave-img" onclick="openModal('modal6')">
+  </div>
+
+  <!-- Modal 6 - Popup com informações da USS Stargazer -->
+  <div id="modal6" class="modal">
+    <div class="modal-content">
+      
+      <span class="close" onclick="closeModal('modal6')">&times;</span>
+      <h9>Seção  USS Stargazer</h9>
+      <img src="img/Star_Trek_06.jpg" alt="USS Stargazer" class="modal-img">
+      <div class="modal-text">
+        <p>A USS Stargazer era uma nave de exploração e combate leve, equipada com motores de 
+          dobra e armamentos padrão da Frota Estelar (fásers e torpedos de fóton).
+          Ficou famosa por uma manobra tática usada por Picard chamada "Manobra Picard", 
+          onde ele enganou uma nave inimiga usando a velocidade de dobra para aparecer em 
+          dois lugares ao mesmo tempo.      
+          A nave foi seriamente danificada em batalha contra uma nave desconhecida e abandonada 
+          no espaço.      
+          Anos depois, ela foi recuperada e restaurada pela Frota Estelar.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================ -->
+  <!-- SEÇÃO 7 - USS Enterprise NCC-1701D -->
+  <!-- ============================================ -->
+  <div class="section">
+    <h10>Seção  USS Enteprise NCC-1701D</h10>
+    
+    <!-- Imagem clicável da USS Enterprise NCC-1701D -->
+    <img src="img/Star_Trek_07.jpg" alt="USS Enterprise NCC-1701D" class="nave-img" onclick="openModal('modal7')">
+  </div>
+
+  <!-- Modal 7 - Popup com informações da USS Enterprise NCC-1701D -->
+  <div id="modal7" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal7')">&times;</span>
+      <h10>Seção  USS Enteprise NCC-1701D</h10>
+      <img src="img/Star_Trek_07.jpg" alt="USS Enterprise NCC-1701D" class="modal-img">
+      <div class="modal-text">
+        <p>Outra versão da Enterprise, produzida pela Paramount.</p>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+<!-- ============================================ -->
+<!-- FOOTER - Rodapé do site com informações de contato -->
+<!-- ============================================ -->
+<footer class="footer" id="contato">
+  <!-- id="contato" permite que o link "Contato" no navbar role até aqui -->
+  <div class="footer-content">
+    <h3>Contato</h3>
+    <p>Entre em contato através das redes sociais:</p>
+    
+    <!-- Container com os ícones das redes sociais -->
+    <div class="social-icons">
+      <!-- Link para GitHub -->
+      <!-- target="_blank" abre em nova aba -->
+      <!-- rel="noopener noreferrer" é uma medida de segurança -->
+      <!-- aria-label ajuda leitores de tela a entender o link -->
+      <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub">
+        <!-- Ícone do Font Awesome -->
+        <i class="fab fa-github"></i>
+      </a>
+      
+      <!-- Link para YouTube -->
+      <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="YouTube">
+        <i class="fab fa-youtube"></i>
+      </a>
+      
+      <!-- Link para LinkedIn -->
+      <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </div>
+    
+    <!-- Copyright do site -->
+    <p class="footer-copyright">&copy; 2024 Site Star Trek. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+  <!-- ============================================ -->
+  <!-- SCRIPTS JAVASCRIPT - Funcionalidades interativas -->
+  <!-- ============================================ -->
+  <script>
+    // ============================================
+    // FUNÇÃO: Navbar Fixo (Sticky)
+    // ============================================
+    // Quando o usuário rola a página, a navbar fica fixa no topo
+    
+    // Executa a função stickyNavbar toda vez que a página é rolada
+    window.onscroll = function() {stickyNavbar()};
+
+    // Pega o elemento da navbar pelo ID
+    const navbar = document.getElementById("navbar");
+    // Guarda a posição inicial do navbar (distância do topo)
+    const sticky = navbar.offsetTop;
+
+    function stickyNavbar() {
+      // Se a página foi rolada além da posição inicial do navbar
+      if (window.pageYOffset >= sticky) {
+        // Adiciona a classe "sticky" que deixa o navbar fixo
+        navbar.classList.add("sticky");
+      } else {
+        // Remove a classe "sticky" quando volta ao topo
+        navbar.classList.remove("sticky");
+      }
+    }
+
+    // ============================================
+    // FUNÇÃO: Abrir Modal
+    // ============================================
+    // Recebe o ID do modal que deve ser aberto (ex: 'modal1', 'modal2', etc.)
+    function openModal(modalId) {
+      // Encontra o elemento do modal pelo ID
+      const modal = document.getElementById(modalId);
+      if (modal) {
+        // Mostra o modal (muda de display: none para display: block)
+        modal.style.display = "block";
+        // Bloqueia o scroll da página quando o modal está aberto
+        document.body.style.overflow = "hidden";
+      }
+    }
+
+    // ============================================
+    // FUNÇÃO: Fechar Modal
+    // ============================================
+    // Recebe o ID do modal que deve ser fechado
+    function closeModal(modalId) {
+      // Encontra o elemento do modal pelo ID
+      const modal = document.getElementById(modalId);
+      if (modal) {
+        // Esconde o modal (muda de display: block para display: none)
+        modal.style.display = "none";
+        // Restaura o scroll da página
+        document.body.style.overflow = "auto";
+      }
+    }
+
+    // ============================================
+    // FUNÇÃO: Fechar Modal ao Clicar Fora
+    // ============================================
+    // Detecta quando o usuário clica em qualquer lugar da página
+    window.onclick = function(event) {
+      // Se o clique foi no fundo escuro do modal (não no conteúdo)
+      if (event.target.classList.contains('modal')) {
+        // Fecha o modal
+        event.target.style.display = "none";
+        // Restaura o scroll da página
+        document.body.style.overflow = "auto";
+      }
+    }
+
+    // ============================================
+    // FUNÇÃO: Fechar Modal com Tecla ESC
+    // ============================================
+    // Escuta quando uma tecla é pressionada
+    document.addEventListener('keydown', function(event) {
+      // Se a tecla pressionada foi ESC
+      if (event.key === 'Escape') {
+        // Encontra todos os modais na página
+        const modals = document.querySelectorAll('.modal');
+        // Para cada modal encontrado
+        modals.forEach(modal => {
+          // Se o modal estiver aberto (display: block)
+          if (modal.style.display === 'block') {
+            // Fecha o modal
+            modal.style.display = 'none';
+            // Restaura o scroll da página
+            document.body.style.overflow = 'auto';
+          }
+        });
+      }
+    });
+  </script>
+
+</body>
+</html>
